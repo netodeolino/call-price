@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  falemais-api:
+    container_name: falemais-api
+    build:
+      context: falemais-api
+      dockerfile: falemais-api.Dockerfile
+    ports:
+      - "8081:8081"
+
+  falemais-front:
+    container_name: falemais-front
+    build:
+      context: falemais-front
+      dockerfile: falemais-front.Dockerfile
+    ports:
+      - "8080:80"
