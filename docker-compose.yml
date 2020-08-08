@@ -1,17 +1,17 @@
 version: '3.4'
 services:
-  falemais-api:
-    container_name: falemais-api
+  callprice-api:
+    container_name: callprice-api
     build:
-      context: falemais-api
-      dockerfile: falemais-api.Dockerfile
+      context: callprice-api
+      dockerfile: callprice-api.Dockerfile
     ports:
       - "8081:8081"
 
-  falemais-front:
-    container_name: falemais-front
+  callprice-front:
+    container_name: callprice-front
     build:
-      context: falemais-front
-      dockerfile: falemais-front.Dockerfile
+      context: callprice-front
+      dockerfile: callprice-front.Dockerfile
     ports:
       - "8080:80"
